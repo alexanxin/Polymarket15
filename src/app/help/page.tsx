@@ -98,7 +98,7 @@ export default function HelpPage() {
                         <div>
                             <h3 className="text-lg font-bold text-blue-400 mb-2">2. Arbitrage Detection</h3>
                             <p className="text-gray-300">
-                                When Yes + No < 1.00, the bot calculates the profit potential and executes trades to capture the spread.
+                                When Yes + No &lt; 1.00, the bot calculates the profit potential and executes trades to capture the spread.
                                 For example, if Yes = $0.45 and No = $0.50, the bot can profit $0.05 per dollar traded.
                             </p>
                         </div>
@@ -131,7 +131,7 @@ export default function HelpPage() {
                                 <div><strong className="text-blue-400">Status:</strong> Active (open for trading) or Resolved (finished)</div>
                                 <div><strong className="text-blue-400">Resolution:</strong> Shows outcome once market resolves</div>
                                 <div><strong className="text-blue-400">Yes/No:</strong> Current market prices (flash green/red on changes)</div>
-                                <div><strong className="text-blue-400">Sum:</strong> Yes + No prices (green when < 1.00 = arbitrage opportunity)</div>
+                                <div><strong className="text-blue-400">Sum:</strong> Yes + No prices (green when &lt; 1.00 = arbitrage opportunity)</div>
                                 <div><strong className="text-blue-400">Arb Opportunity:</strong> Potential profit per $100 traded</div>
                             </div>
                         </div>
@@ -157,7 +157,7 @@ export default function HelpPage() {
                                 <li><span className="text-yellow-400">⟳</span> Refresh icon shows when market data is updating</li>
                                 <li><span className="text-green-400 animate-pulse">Green flash</span> when prices increase</li>
                                 <li><span className="text-red-400 animate-pulse">Red flash</span> when prices decrease</li>
-                                <li><span className="text-green-400">Green sum</span> indicates arbitrage opportunity (< 1.00)</li>
+                                <li><span className="text-green-400">Green sum</span> indicates arbitrage opportunity (&lt; 1.00)</li>
                             </ul>
                         </div>
                     </div>
