@@ -25,14 +25,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://your-domain.com'), // Replace with your actual domain
+  metadataBase: new URL('https://polymarket15.vercel.app/'), // Replace with your actual domain
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: "Polymarket Trading Bot - High-Frequency Crypto Trading",
     description: "Advanced algorithmic trading bot for Polymarket's prediction markets. Real-time arbitrage detection for 15-minute crypto price predictions.",
-    url: 'https://your-domain.com', // Replace with your actual domain
+    url: 'https://polymarket15.vercel.app/', // Replace with your actual domain
     siteName: 'Polymarket Trading Bot',
     images: [
       {
