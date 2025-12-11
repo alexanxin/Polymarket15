@@ -327,11 +327,19 @@ export default function TradingBot() {
     <div className="min-h-screen bg-gray-900 text-white font-mono p-4">
       {/* Header */}
       <div className="bg-blue-900 text-white p-4 mb-4">
-        <h1 className="text-xl font-bold">
-          Polymarket High-Frequency Bot v1.0 | Status: {DEMO_MODE ? 'DEMO MODE' : 'LIVE MODE'} | Balance: ${botState.balance.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
-        </h1>
+        <div className="flex justify-between items-center mb-2">
+          <h1 className="text-xl font-bold">
+            Polymarket High-Frequency Bot v1.0 | Status: {DEMO_MODE ? 'DEMO MODE' : 'LIVE MODE'} | Balance: ${botState.balance.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+          </h1>
+          <a
+            href="/help"
+            className="bg-blue-700 hover:bg-blue-600 px-4 py-2 rounded text-sm font-medium transition-colors"
+          >
+            📚 Help & Guide
+          </a>
+        </div>
         {botState.selectedMarket && (
-          <p className="text-sm mt-2">
+          <p className="text-sm">
             Trading on: {botState.selectedMarket.question.slice(0, 60)}...
           </p>
         )}
