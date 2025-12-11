@@ -40,14 +40,7 @@ export default function TradingBot() {
 
   const fetchMarkets = async () => {
     try {
-      const url = "https://gamma-api.polymarket.com/markets";
-      const params = new URLSearchParams({
-        active: "true",
-        closed: "false",
-        limit: "20",
-        tag_id: "1"
-      });
-      const response = await fetch(`${url}?${params}`);
+      const response = await fetch('/api/markets');
       const data = await response.json();
 
       const markets: Market[] = [];
